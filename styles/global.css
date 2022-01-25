@@ -1,0 +1,28 @@
+* {
+	--bg-color: white;
+	--secondary-bg-color: #cce5f5;
+	--tertiary-bg-color: hsla(205, 17%, 25%, 0.4);
+	--accent: #4433ff;
+	--text-black: hsl(222deg, 22%, 5%);
+}
+
+button {
+	background-color: var(--accent);
+	color: white;
+	max-width: 70%;
+	padding: 8px 16px;
+	border-radius: 8px;
+	border: none;
+	cursor: pointer;
+}
+
+.width-wrapper {
+	max-width: 1300px;
+	padding: 0 20px;
+}
+
+@media (max-width: 450px) {
+	.width-wrapper {
+		padding: 0 10px;
+	}
+}

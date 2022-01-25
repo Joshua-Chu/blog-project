@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+@import "global.css";
+@import "header.css";
+@import "blogs.css";
+@import "reset.css";
+
+body {
+	font-family: "Poppins", sans-serif;
+	color: var(--text-black);
+	background-color: var(--bg-color);
+}
+header {
+	padding: 2rem 0rem;
+	background: var(--secondary-bg-color);
+	margin-bottom: 50px;
+}
+
+footer {
+	background: var(--secondary-bg-color);
+	width: 100%;
+	padding: 16px;
+	text-align: center;
+	font-weight: bold;
+}
+
+nav {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container {
+	background-image: url("../assets/bg.svg");
+	background-repeat: no repeat;
+	background-size: cover;
+}
+
+#logo {
+	display: inline-block;
+	font-size: 1.2rem;
+	color: var(--accent);
+	font-weight: bold;
+	border-bottom: 2px solid var(--accent);
+
+	transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#logo:hover {
+	transform: rotate(10deg);
+}
+
+#newsletter {
+	display: inline-block;
+	color: var(--text-black);
+	padding-top: 16px;
+	font-size: 1.1rem;
+	transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#newsletter:hover {
+	transform: translateX(20px);
+}
+
+#newsletter-form {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 32px;
+}
+
+#newsletter-form h1 {
+	color: var(--accent);
+	font-size: 1.5rem;
+}
+
+.form-container {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	max-width: 90%;
+}
+
+.form-container label {
+	color: var(--accent);
+}
+
+.form-container input {
+	border-color: var(--accent);
+	padding: 8px 16px;
+	border-radius: 16px;
+	outline: var(--accent);
+}
+
+.form-container button {
+	margin: 0 auto;
+	margin-top: 32px;
+}
+
+@media (min-width: 496px) {
+	#newsletter {
+		padding-left: 32px;
+		padding-top: 0px;
+	}
+
+	#newsletter-form h1 {
+		font-size: 2rem;
+	}
+
+	.form-container {
+		max-width: 60%;
+	}
+}

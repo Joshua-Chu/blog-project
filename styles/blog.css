@@ -1,0 +1,159 @@
+header {
+	margin-bottom: unset;
+}
+
+section {
+	padding: 0 20px;
+}
+
+article {
+	display: grid;
+}
+
+aside {
+	display: none;
+}
+
+figure {
+	margin-bottom: 32px;
+}
+
+figcaption {
+	font-style: italic;
+	font-size: 0.9em;
+	margin-top: 16px;
+	text-align: center;
+}
+
+img {
+	width: 100%;
+	max-height: 500px;
+}
+
+blockquote {
+	color: var(--text-black);
+	font-style: italic;
+	border-left: 2px solid var(--text-black);
+	padding-left: 8px;
+	margin: 16px 0;
+}
+
+.post__container a {
+	color: var(--accent);
+	border-bottom: 2px solid var(--accent);
+}
+
+.post__banner {
+	background-color: var(--secondary-bg-color);
+	min-height: 350px;
+	padding: 16px;
+	margin-bottom: 48px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.post__banner__texts {
+	max-width: 75%;
+	color: var(--text-black);
+}
+
+.post__title {
+	padding-bottom: 32px;
+}
+
+.post__container {
+	padding: 0;
+	padding-bottom: 160px;
+	display: grid;
+	gap: 16px;
+
+	font-size: 1.2rem;
+	line-height: 2rem;
+}
+
+.post__author {
+	border-left: 2px solid var(--accent);
+	margin: 48px 0;
+	padding: 16px;
+	border-radius: 0 16px 16px 0;
+
+	display: flex;
+}
+
+.author__info {
+	padding-left: 16px;
+}
+
+.author__name {
+	color: var(--accent);
+	font-weight: bold;
+}
+
+.author__title,
+.author__bio {
+	font-size: 0.9rem;
+	line-height: 1.7;
+}
+
+.author__photo {
+	width: 100px;
+	aspect-ratio: 1;
+	border-radius: 50%;
+}
+.arrow {
+	display: inline-block;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.arrow-up {
+	max-width: fit-content;
+	margin: 0 auto;
+	padding: 48px;
+	transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.arrow-up:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+@media (min-width: 700px) {
+	section {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	aside {
+		border-left: 3px solid var(--accent);
+		padding-left: 16px;
+		color: var(--accent);
+		display: initial;
+		min-width: 25%;
+		min-height: 200px;
+		right: 5%;
+		position: fixed;
+	}
+
+	aside ul {
+		list-style: none;
+		padding: 0;
+		padding-top: 16px;
+		display: grid;
+		gap: 8px;
+	}
+
+	.post__container {
+		max-width: 70%;
+		margin-right: auto;
+	}
+	.post__banner__texts {
+		max-width: 1300px;
+	}
+	.post__subtitle {
+		font-size: 1.3rem;
+	}
+}
