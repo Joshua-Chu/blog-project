@@ -120,8 +120,21 @@ blockquote {
 	cursor: pointer;
 	transform: scale(1.2);
 }
+/* 
+@media (min-width: 1000px) {
+	aside {
+		border-left: 3px solid var(--accent);
+		padding-left: 16px;
+		color: var(--accent);
+		display: initial;
+		min-width: 25%;
+		min-height: 200px;
+		right: 5%;
+		position: fixed;
+	}
+} */
 
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
 	section {
 		margin-right: auto;
 		margin-left: auto;
@@ -132,7 +145,7 @@ blockquote {
 		padding-left: 16px;
 		color: var(--accent);
 		display: initial;
-		min-width: 25%;
+		max-width: 265px;
 		min-height: 200px;
 		right: 5%;
 		position: fixed;
